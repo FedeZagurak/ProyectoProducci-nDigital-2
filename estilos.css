@@ -1,0 +1,303 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header{
+    color: white; 
+    text-decoration: none;
+    background-color: black; 
+    border-bottom: 10px solid black;
+    text-align: center; 
+    font-family: 'Satisfy', cursive;
+    font-size: 30px; 
+}
+
+header div a {
+    text-decoration: none;
+}
+
+.logo {
+    color: white; 
+    text-decoration: none;
+    font-size: 50px;
+}
+
+footer{
+    background-color: black;
+    font-size: 30px ;
+    text-align: center; 
+    border:solid black; 
+    padding-top: 0px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+}
+footer h1 {
+    font-size: 30px;
+    position: relative;
+    padding-right: 20%;
+    padding-top: 5px;
+}
+
+footer p {
+    position: relative;
+    padding-top: 10px;
+}
+
+footer img {
+    width: 60px;
+}
+
+nav {
+    background-color: rgb(236, 102, 17);
+}
+
+nav ul li a {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+body {
+    
+    background-image: url('img/fondo.jpg');
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.row {
+    padding: 15px;
+    background-color: rgba(255,255,255,0.6);
+
+}
+
+.col {
+    font-family: 'Fjalla One', sans-serif;
+}
+.col h2 {
+    padding-top: 10px;
+}
+
+/* CV */
+
+.cv {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#contenedor {
+    width: 65%;
+    background-color: rgba(255,255,255,0.6);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contenedor div {
+    display: flex;
+    padding: 20px;
+}
+
+.cara {
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.cara img {
+    width: 200px;
+    height: 239px;
+    border: 6px solid black;
+    border-radius: 5px;
+}
+
+.menu {
+    font-family: 'Roboto', sans-serif;
+    width: 55%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.menu a { 
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+    border: 6px solid orange;
+    height: 60px;
+}
+
+.menu a:hover {color: white; background-color: dimgrey}
+
+.info {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-flow: wrap;
+    background-color: black;
+    color: white;
+    width: 850px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.info h1 {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 300px;
+    text-align: left;
+}
+.info p {
+    position: relative;
+    padding: 10px;
+    text-align: left;
+
+}
+
+.premios {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-flow: wrap;
+    background-color: black;
+    color: white;
+    width: 850px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.premios h1 {
+    padding: 10px;
+}
+
+.redes {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-flow: wrap;
+    background-color: black;
+    color: white;
+    width: 850px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.redes h1 {
+    padding: 10px;
+    padding-right: 300px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px)
+{
+    header {
+        width: 100%;
+    }
+    footer {
+        font-size: 40px;
+    }
+    nav ul {
+        display: block;
+    }
+    #contenedor {
+        width: 95%;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu a {
+        width: 95%; margin: 3%;
+    }
+    .info {
+        width: 95%;
+    }
+    .premios {
+        width: 95%;
+    }
+    .redes {
+        width: 95%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 599px)
+{ 
+    header {
+        width: 100%;
+        padding: 0%;
+    }
+    footer {
+        font-size: 40px;
+    }
+    nav ul {
+        display: block; width: 100%;}
+
+    #contenedor { 
+        width: 100%; margin: 3%; flex-flow: wrap;
+    }
+    #contenedor div {
+        width: 96%; 
+    }
+    section { 
+        width: 95%; margin: 3% 
+    }
+    img { 
+        max-width: 100%; display: block
+    }
+    .cara {
+        justify-content: center;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu a {
+        width: 95%; margin: 3%;
+        height: 70%;
+    }
+    .info {
+        margin: 3%; width: 95%;
+    }
+    .info h1 {
+        padding-right: 2%;
+    }
+    .premios {
+        width: 95%;
+    }
+    .redes { 
+        width: 95%;
+    }
+    .redes h1 {
+        padding-right: 2%;
+    }
+}
+
+/* FIN CV */
+
+.doscol { padding: 20px; display:flex; flex-flow: wrap; justify-content: center; font-family: 'Fjalla One', sans-serif; }
+.doscol div { width: 35%;  border: 1px solid black;  box-sizing: border-box; }
+.doscol div img { width: 125px; height: 125px;float: left;  margin-right: 10px}
+.doscol h1 { text-align: center; margin-top: 25px; font-size: 25px;}
+.doscol h2 { text-align: center; font-size: 25px; padding-top: 10px;}
+.doscol h3 { text-align: center; margin-top: 25px; font-family: 'Fjalla One', sans-serif; font-size: 1.5em;}
+
+
+.fgris { background-color: rgba(255, 255, 255, 0.4); color: black;}
+.fnegro { background-color: rgba(0, 0, 0, 0.8); color: white;}
+.frojo { background-color: rgba(254, 0, 0, 0.8); color: yellow;}
+
+.albumsgris { margin-left: 2%; background-color: rgba(255, 255, 255, 0.4); color: black;}
+.albumsbeige { margin-left: 2%; background-color: rgba(236, 226, 198, 0.8); color: black;}
+.albumsazul { margin-left: 2%; background-color: rgba(0, 0, 255, 0.8); color: yellow;}
+.albumsblanco { margin-left: 2%; background-color: rgba(255, 255, 255, 0.8); color: darkblue;}
+.albumsnegro { margin-left: 2%; background-color: rgba(0, 0, 0, 0.8); color: white;}
+.albumsnaranja { margin-left: 2%; background-color: rgba(255, 128, 0, 0.8); color: black;}
+
